@@ -1,0 +1,380 @@
+:root {
+    --primaryColor: #2D3040;
+    --secondaryColor: #F36565;
+}
+
+.skill .heading,
+.skill .subheading,
+.skill h1,
+.skill h2,
+.skill h3,
+.skill h4,
+.skill h5,
+.skill .heading,
+.skill .subheading,
+.skill h1,
+.skill h2,
+.skill h3,
+.skill h4,
+.skill h5 {
+    color: var(--primaryColor) !important;
+}
+
+.navbar {
+    background-color: var(--primaryColor) !important;
+}
+
+.navbar .dropdown-item:hover {
+    background-color: #f3656545;
+    color: black;
+}
+
+.nav-item {
+    color: white !important;
+}
+
+.margin-section {
+    margin-top: 100px;
+}
+
+.nama-lengkap {
+    color: var(--secondaryColor);
+    font-weight: 500 !important;
+}
+
+.nav-item .dropdown {
+    color: white;
+}
+
+.navbar-brand {
+    color: white !important;
+}
+
+.navbar-text {
+    color: white !important;
+}
+
+.home {
+    background-color: var(--primaryColor);
+    height: 650px;
+    padding-top: 10rem;
+    overflow: hidden;
+}
+
+.progress-bar {
+    background-color: var(--secondaryColor) !important;
+}
+
+.send-mail {
+    background-color: var(--primaryColor);
+    height: 600px;
+    overflow: hidden;
+}
+
+.btn-home .btn-contact,
+.btn-send-message {
+    background-color: var(--secondaryColor) !important;
+    color: white !important;
+}
+
+.btn-home .btn-contact:hover,
+.btn-send-message:hover {
+    background-color: white !important;
+    color: var(--secondaryColor) !important;
+}
+
+.heading span {
+    opacity: 85%;
+    font-weight: lighter;
+}
+
+.container-foto::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: linear-gradient(to top, rgba(45, 48, 64, 1), rgba(0, 0, 0, 0));
+    bottom: 0;
+}
+
+.cards {
+    border-color: var(--primaryColor);
+    color: var(--primaryColor) !important;
+}
+
+.img-container {
+    margin: 1rem auto;
+    padding: 0%;
+}
+
+.cards:hover img {
+    transition: 0.8s all;
+    -webkit-filter: blur(2px);
+    filter: blur(2px);
+}
+
+.cards img,
+.overlay {
+    transition: .8s all;
+    border-radius: 3px;
+}
+
+.img-bg {
+    float: left;
+    padding: 0;
+    max-width: 100%;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: var(--primaryColor);
+    background-color: rgba(2550, 255, 255, 0.5);
+    opacity: 0;
+}
+
+.overlay h2 {
+    padding-top: 20%;
+}
+
+.img-bg,
+.overlay {
+    text-align: center;
+}
+
+.overlay h2 {
+    padding-top: 20%;
+}
+
+.overlay:hover {
+    opacity: 1;
+}
+
+.cards .heading {
+    text-align: center;
+}
+
+.btn-container .btn-uiux {
+    border-color: white;
+    background-color: var(--secondaryColor);
+    color: white;
+}
+
+.btn-container .btn-uiux:hover {
+    border-color: var(--secondaryColor);
+    background-color: white;
+    color: var(--secondaryColor);
+}
+
+.send-mail {}
+
+/* tablet or higher */
+
+@media (min-width: 767.98px) {
+    .home {
+        padding-top: 14rem;
+    }
+
+    .home .heading {
+        font-size: 36px;
+    }
+}
+
+/* laptop or higher */
+
+@media (min-width: 991.98px) {
+
+    .non-dropdown:hover::after {
+        content: '';
+        display: block;
+        border-bottom: 3px solid var(--secondaryColor);
+        width: 50%;
+        margin: auto;
+        padding-bottom: 5px;
+        margin-bottom: -8px;
+    }
+
+    .non-dropdown.active::after {
+        content: '';
+        display: block;
+        border-bottom: 3px solid var(--secondaryColor);
+        width: 50%;
+        margin: auto;
+        padding-bottom: 5px;
+        margin-bottom: -8px;
+    }
+
+    .home .content-left {
+        padding-bottom: 40px;
+    }
+
+    .home .heading {
+        font-size: 46px;
+    }
+
+    .home .subheading {
+        font-size: 20px;
+    }
+
+    .home img {
+        width: 75%;
+        right: 0;
+    }
+
+    .home .container,
+    .home .row {
+        height: 50%;
+    }
+}
+
+
+/* tablet or below */
+
+@media (max-width: 991.98px) {
+
+    .nav-link.active {
+        padding-left: 0.5rem;
+        background-color: var(--secondaryColor);
+    }
+
+    .home-container {
+        overflow: hidden;
+    }
+
+    .animated-box div:nth-child(9) {
+        display: none;
+    }
+
+    .animated-box div:nth-child(6) {
+        display: none;
+    }
+
+    .send-mail {
+        height: 1000px;
+    }
+
+    .send-mail .right {
+        margin-top: 50px;
+    }
+
+}
+
+/* Blurry Effect Cards */
+
+/* GRADIENT RESPONSIVE PICTURE CUY */
+
+@media (min-width: 991.98px) {
+    .container-foto::after {
+        bottom: 40%;
+    }
+}
+
+@media (min-width: 1199.98px) {
+    .container-foto::after {
+        bottom: 14%;
+    }
+}
+
+@media (min-width: 1399.98px) {
+    .container-foto::after {
+        bottom: 0;
+    }
+}
+
+
+/* Animate Background Landing Page */
+
+.animated-box {
+    z-index: 1;
+}
+
+.col-lg-6.d-lg-flex.flex-lg-column.justify-content-lg-end.content-left {
+    z-index: 2;
+}
+
+.animated-box div {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border: 6px solid rgba(255, 255, 255, 0.8);
+    border-radius: 3px;
+}
+
+.animated-box div:nth-child(1) {
+    top: 12%;
+    left: 42%;
+    animation: animate 10s linear infinite;
+}
+
+.animated-box div:nth-child(2) {
+    top: 35%;
+    left: 70%;
+    animation: animate 7s linear infinite;
+}
+
+.animated-box div:nth-child(3) {
+    top: 17%;
+    left: 6%;
+    animation: animate 9s linear infinite;
+}
+
+.animated-box div:nth-child(4) {
+    top: 20%;
+    left: 60%;
+    animation: animate 10s linear infinite;
+}
+
+.animated-box div:nth-child(5) {
+    top: 65%;
+    left: 35%;
+    animation: animate 6s linear infinite;
+}
+
+.animated-box div:nth-child(6) {
+    top: 80%;
+    left: 30%;
+    animation: animate 12s linear infinite;
+}
+
+.animated-box div:nth-child(7) {
+    top: 60%;
+    left: 80%;
+    animation: animate 15s linear infinite;
+}
+
+.animated-box div:nth-child(8) {
+    top: 32%;
+    left: 25%;
+    animation: animate 16s linear infinite;
+}
+
+.animated-box div:nth-child(9) {
+    top: 90%;
+    left: 25%;
+    animation: animate 9s linear infinite;
+}
+
+.animated-box div:nth-child(10) {
+    top: 20%;
+    left: 80%;
+    animation: animate 5s linear infinite;
+}
+
+
+@keyframes animate {
+    0% {
+        transform: scale(0) translateY(0) rotate(0);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1.3) translateY(-90px) rotate(360deg);
+        opacity: 1;
+    }
+}
