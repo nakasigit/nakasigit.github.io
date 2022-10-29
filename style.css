@@ -67,7 +67,7 @@
 
 .send-mail {
     background-color: var(--primaryColor);
-    height: 600px;
+    height: 580px;
     overflow: hidden;
 }
 
@@ -171,9 +171,15 @@
     color: var(--secondaryColor);
 }
 
-.send-mail {}
+.footer{
+    background-color: var(--primaryColor);
+    height: 200px;
+    overflow: hidden;
+}
 
-/* tablet or higher */
+.footer a{
+    text-decoration: none;
+}
 
 @media (min-width: 767.98px) {
     .home {
@@ -255,7 +261,7 @@
     }
 
     .send-mail {
-        height: 1000px;
+        height: 900px;
     }
 
     .send-mail .right {
