@@ -29,6 +29,12 @@
     color: black;
 }
 
+.dropdown-item.active{
+    color: #fff !important;
+    background-color: var(--secondaryColor) !important;
+    border-color: #fff !important;
+}
+
 .nav-item {
     color: white !important;
 }
@@ -171,13 +177,13 @@
     color: var(--secondaryColor);
 }
 
-.footer{
+.footer {
     background-color: var(--primaryColor);
     height: 200px;
     overflow: hidden;
 }
 
-.footer a{
+.footer a {
     text-decoration: none;
 }
 
