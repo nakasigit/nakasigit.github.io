@@ -10,13 +10,15 @@
 .skill h3,
 .skill h4,
 .skill h5,
-.skill .heading,
-.skill .subheading,
-.skill h1,
-.skill h2,
-.skill h3,
-.skill h4,
-.skill h5 {
+.skill p,
+.experiences .heading,
+.experiences .subheading,
+.experiences h1,
+.experiences h2,
+.experiences h3,
+.experiences h4,
+.experiences h5,
+.experiences p{
     color: var(--primaryColor) !important;
 }
 
@@ -29,7 +31,7 @@
     color: black;
 }
 
-.dropdown-item.active{
+.dropdown-item.active {
     color: #fff !important;
     background-color: var(--secondaryColor) !important;
     border-color: #fff !important;
@@ -187,6 +189,34 @@
     text-decoration: none;
 }
 
+/* carousel */
+.carousel{
+    width: 950px;
+}
+
+.experience-pm{
+    width: 500px;
+}
+
+.carousel .carousel-inner {
+    height: 500px
+}
+
+.carousel-inner .carousel-item img {
+    height: 500px;
+    object-fit: cover
+}
+
+@media(max-width:768px) {
+    .carousel .carousel-inner {
+        height: auto;
+    }
+
+    .experience-pm img{
+        height: 500px !important;
+    }
+}
+
 @media (min-width: 767.98px) {
     .home {
         padding-top: 14rem;
@@ -276,13 +306,14 @@
 
 }
 
-/* Blurry Effect Cards */
-
 /* GRADIENT RESPONSIVE PICTURE CUY */
 
 @media (min-width: 991.98px) {
     .container-foto::after {
         bottom: 40%;
+    }
+    .experience-header{
+        margin-bottom: 140px;
     }
 }
 
@@ -290,11 +321,17 @@
     .container-foto::after {
         bottom: 14%;
     }
+    .experience-header{
+        margin-bottom: 100px;
+    }
 }
 
 @media (min-width: 1399.98px) {
     .container-foto::after {
         bottom: 0;
+    }
+    .experience-header{
+        margin-bottom: 90px;
     }
 }
 
