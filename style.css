@@ -22,6 +22,11 @@
     color: var(--primaryColor) !important;
 }
 
+#gallery-programming {
+    background-color: var(--primaryColor) !important;
+    color: white;
+}
+
 .navbar {
     background-color: var(--primaryColor) !important;
 }
@@ -43,6 +48,10 @@
 
 .margin-section {
     margin-top: 100px;
+}
+
+.padding-section {
+    padding-top: 100px;
 }
 
 .nama-lengkap {
@@ -207,6 +216,23 @@
     object-fit: cover
 }
 
+.project-programming {
+    width: 75% !important;
+}
+
+.project-programming .carousel-inner {
+    height: 500px;
+}
+
+.project-programming .btn {
+    background-color: var(--secondaryColor) !important;
+    color: white !important;
+}
+
+.project-programming .btn:hover {
+    background-color: white !important;
+    color: var(--secondaryColor) !important;
+}
 
 
 @media(max-width:768px) {
