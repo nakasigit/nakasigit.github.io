@@ -22,7 +22,7 @@
     color: var(--primaryColor) !important;
 }
 
-#gallery-programming {
+.gallery {
     background-color: var(--primaryColor) !important;
     color: white;
 }
@@ -234,6 +234,9 @@
     color: var(--secondaryColor) !important;
 }
 
+#gallery-ui .ui-ux img{
+    filter: brightness(50%);
+}
 
 @media(max-width:768px) {
     .carousel .carousel-inner {

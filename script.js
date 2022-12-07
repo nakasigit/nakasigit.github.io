@@ -59,3 +59,10 @@ $("#slider .carousel-inner").normalizeHeight();
 $(window).on('resize', function () {
   $("#slider .carousel-inner").normalizeHeight();
 });
+
+const myModal = document.getElementById('myModal')
+const myInput = document.getElementById('myInput')
+
+myModal.addEventListener('shown.bs.modal', () => {
+  myInput.focus()
+})
